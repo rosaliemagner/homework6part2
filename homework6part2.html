@@ -7,19 +7,24 @@
 </head>
 <body>
 <h1>Homework 6: Census data choropleth </h1>
-<h3>In this assignment students learn to download tabular data from census.data.gov, clean csv data tables, and join tabular data to shapefile data in QGIS. Students are asked to create choropleths of the dataset using 3 different classification modes in QGIS. </h3>
+<h3>In this assignment I created a ratio using the field calculator in QGIS, dividing the number of 18–24-year-olds enrolled in college or graduate school by the total number of 18–24-year-olds in the county. I then multiplied this number by 100 to get a percentage.
+    The map shows, by county, the percentage of individuals in the 18-24 age group that are enrolled in college or graduate school.
+</h3>
 <!-- Your map goes here -->
 <h2>Equal Count Classification</h2>
 <h3>This classification model separates the data so that there is an equal number of counties in each bracket of data (represented by a different color). This can be useful when trying to get an even distribution of data across the map, 
-    however it does not highlight the disparities in </h3>
-<a href="Equal Count.png">
-    <img src="Equal Count.png" alt="my map" width='800px'>
+    however it does not highlight the disparities in the 18-24 age group college enrollment among the counties.</h3>
+<a href="EqualCount.png">
+    <img src="EqualCount.png" alt="my map" width='800px'>
     </a>
 <h2>Natural Breaks Classification</h2>
-<a href="Natural Breaks.png">
-    <img src="Natural Breaks.png" alt="my map" width='800px'>
+<h3>This classification method separates the data in a way that more appropriately shows the differences in the college enrollment of the county. This is a better suited method than equal count for my purpose of displaying what counties have significantly higher enrollment rates.</h3>
+<a href="Natural Break.png">
+    <img src="Natural Break.png" alt="my map" width='800px'>
     </a>
 <h2>Pretty Breaks Classification</h2>
+<h3>This mode of classification is the most suited for my map. It is similar to the natural breaks classification, however, it organizes the brackets in whole number percentages, which is much easier for the viewer to understand. The data is still separated in a way that shows 
+    what counties have much higher enrollment rates in the 18-24 age group.</h3>
 <a href="Pretty Breaks.png">
     <img src="Pretty Breaks.png" alt="my map" width='800px'>
     </a>
